@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kingsman Hotels</title>
+        <link rel="stylesheet" href="styles/home.css">
+        <script src="main.js" defer></script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#f5f5f5">
+        <link rel="shortcut icon" href="favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#f5f5f5">
+        <meta name="msapplication-config" content="favicons/browserconfig.xml">
+        <meta name="theme-color" content="#f5f5f5">
+        
+
+
+    </head>
+
+    <body class="book-body">
+        <section class="book-header">
+            <nav>
+                <a href="#"><img id="logo"   src="images/oglogo.png" alt="logopic"></a>
+                <div class="nav-links" id="navLinks">
+                    <img src="images/icons/cross2.png" alt="menu-cross" class="fa" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="adventures.html">Adventure</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li>
+                            <a href="#">Events ▼</a>
+                            <ul class="dropdown">
+                                <li><a href="weddings.html">Weddings</a></li>
+                                <li><a href="workshop.html">Workshops </a></li>
+                            </ul>                                                                       
+                        </li>
+                        <li><a href="booking.html">Bookings</a></li>
+                    </ul>
+                </div>
+                <img src="images/icons/menubar.png" alt="menu-bar" class="fa" onclick="showMenu()">
+            </nav>
+        
+            <div class="rest-topic">
+                <h1>Book Your Stay</h1>
+            </div>
+        </section>
+        
+        <section class="main-book">
+
+
+            <h1>Our Rooms</h1>
+
+            <table class="branch-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Our Prices</th>
+                </tr>
+                <tr>
+                    <td class="Branch-column"><img src="images/single1.jpg" alt="single room"></td>
+                    <td class="description-column">Enjoy the height of luxury and refinement in one of our single rooms at Kingsman Hotels. Our single bedrooms are perfectly crafted for the discerning traveler, providing a well-balanced combination of luxury and usefulness. Discover a peaceful haven furnished with contemporary conveniences and attentive service, making it the ideal place for travelers traveling alone. </td>
+                    <td class="location-column">Prices  : 25,000 LKR </td>
+                </tr>
+                <tr>
+                    <td class="Branch-column"><img src="images/double.jpg" alt="double room"></td>
+                    <td class="description-column">Our magnificent double bedrooms, which have been thoughtfully designed for both luxury and convenience, will elevate your stay at Kingsman Hotels. In your roomy retreat, savor the extra comforts of an iron board, mini fridge, and comfortable sofa. Enter an opulent world where every aspect has been thoughtfully designed to go above and beyond. Enjoy unmatched hospitality in an elegant setting with all the conveniences of today for a stay that will stay with you forever.
+                    </td>
+                    <td class="location-column">Prices  : 35,000 LKR</td>
+                </tr>
+                <tr>
+                    <td class="Branch-column"><img src="images/thriple.jpg" alt="thriple room"></td>
+                    <td class="description-column">Indulge in the height of luxury in one of Kingsman Hotels' magnificent triple bedrooms, where lavishness and seaside charm collide. Enjoy the amazing view of the beach, which is enhanced by a mini fridge for your convenience. Enjoy two TVs for entertainment purposes and be amazed by the beautiful ceiling paintings. Discover the height of luxury, where each element has been thoughtfully chosen to ensure a truly remarkable stay.
+                    </td>
+                    <td class="location-column">Prices  : 40,000 LKR 
+                        </td>
+                </tr>
+                
+                <tfoot>
+                    <tr>
+                        <td colspan="3"> ~ Extra bed : 8000 LKR<br> <i>Kids above 5 are charged extra 5000 for meals ~</i></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <br><br><br><br><br>   
+
+            <form id="personal-form">
+            
+
+                <div class="book-container">
+                    <div class="book-title">Personal Details</div>
+                    <!-- <form action="#"> -->
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="fName" class="details">Full Name</label>
+                                <input type="text" placeholder="Full Name" id="fName" required>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label class="details" for="userName">Username</label>
+                                <input type="text" placeholder="UserName" id="userName" >
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="gmail" class="details">Gmail</label>
+                                <input type="email" placeholder="YourGmail@gmail.com"  id="gmail">
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="address" class="details">Official Address</label>
+                                <input type="text" placeholder="Home Address" id="address" >
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="idCard" class="details">ID/NIC</label>
+                                <input type="text" placeholder="ID/NIC" id="idCard" >
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="phoneNum" class="details">Phone number</label>
+                                <input type="number" placeholder="+9412235262" id="phoneNum" >
+                            </div>
+                        </div>
+
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="promoCode" class="details">Promo Code</label>
+                                <input type="text" placeholder="Promo123"  id="promoCode">
+                            </div>
+                        </div>
+
+                </div>  
+            </form>
+
+                <br><Br><Br>
+                
+    
+            
+            <form id="personal-form2">
+                <div class="book-container">
+                <div class="book-title">Booking Rooms</div>
+                    <!-- <form action="#"> -->
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="adultsRoom" class="details">Adults</label>
+                                <input type="number" placeholder="0" min="0" max="5" id="adultsRoom" >
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="infantsRoom" class="details">Infants</label>
+                                <input type="number" placeholder="0" min="0" max="5" id="infantsRoom" >
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="kidsRoom" class="details">Children (Above 5)</label>
+                                <input type="number" placeholder="0" min="0" max="5" id="kidsRoom">
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="singleRoom" class="details">Single Rooms</label>
+                                <input type="number" placeholder="0" min="0" max="5" id="singleRoom" >
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="doubleRoom" class="details">Double Rooms</label>
+                                <input type="number" placeholder="0" min="0" max="5" id="doubleRoom" >
+                            </div>
+                        </div>
+
+
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="thripleRoom" class="details">Thriple Rooms</label>
+                                <input type="number" placeholder="0" min="0" max="5" id="thripleRoom" >
+                            </div>
+                        </div>
+
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="extraBed" class="details">Extra Beds</label>
+                                <input type="number" placeholder="0" min="0" max="2" id="extraBed" >
+                            </div>
+                        </div>
+                        
+                
+
+
+                    <div class="user-details dropdown">
+                        <div class="input-box">
+                            <label for="specialReq" class="details">Special Requiremnts</label>
+                            <select  id="specialReq">
+                                <option>Garden View + WiFi</option>
+                                <option>Pool View + WiFi</option>
+                                <option>Beach View + WiFi</option>
+                                <option>Ceiling Paints + WiFi</option>
+                                <option>Extra TV + WiFi</option>
+
+
+                            </select>
+                        </div>
+                    </div>
+
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="checkIn" class="details">Check-In</label>
+                                <input type="date"  id="checkIn" >
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label for="checkOut" class="details">Check-Out</label>
+                                <input type="date" id="checkOut">
+                            </div>
+                        </div>
+
+
+
+                        <fieldset>
+
+                            <button type="button" id="loyalityBtn">Check Loyalty</button>
+
+                            <legend>Loyality Points</legend>
+                                    <p id="loyalOutput"></p>
+
+                        </fieldset>
+
+                        <fieldset>
+
+                            <button type="button" id="book_nowBtn">Book Now</button>
+                            <button type="button" id="favBtnR">Add to Favourites</button>
+
+
+                            <legend>Current Bookings Info</legend>
+                                    <p id="roomsOutput"></p>
+
+                        </fieldset>
+
+                
+
+                <fieldset>
+
+                    <legend>Overall Bookings Info</legend>
+                            <p id="overallOutput"></p>
+
+                </fieldset>
+                
+
+            
+            
+
+        </div>
+
+    </form>
+
+
+        <div class="table-box">
+            <div class="table-row table-head">
+                <div class="table-cell">
+                    <p>Adventure</p>
+                </div>
+                <div class="table-cell">
+                    <p>Prices</p>
+                </div>
+                <div class="table-cell">
+                    <p>Guides</p>
+                </div>
+
+            </div>
+            <div class="table-row  light-row">
+                <div class="table-cell">
+                    <p>Scuba Diving</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Diving for local Adults (1 hr) : 5000LKR   <br><br>
+                        Diving for local kids (above 5 years) : 2000LKR  <br><br>
+                        Diving for foreign adults : 10000LKR  <br><br>
+                        Diving for foreign kids : 5000LKR  <br><br>
+                        </p>
+                </div>
+                <div class="table-cell  last-cell">
+                    <p>Adult : 1000LKR extra will be charged.<Br><br>
+                        Kids : 500LKR extra will be charged.
+                        </p>
+                </div>
+
+            </div>
+            <div class="table-row  dark-row">
+                <div class="table-cell">
+                    <p>Hiking in Sinharaja</p>
+                </div>
+                <div class="table-cell">
+                    <p>Hiking for local Adults (1 hr) : 5000LKR   <br><br>
+                        Hiking for local kids (above 5 years) : 2000LKR  <br><br>
+                        Hiking for foreign adults : 10000LKR  <br><br>
+                        Hiking for foreign kids : 5000LKR  <br></p>
+                </div>
+                <div class="table-cell  last-cell">
+                    <p>Adult : 1000LKR extra will be charged. <Br> <br>
+                        Kids : 500LKR extra will be charged.</p>
+                </div>
+
+            </div>
+            <div class="table-row  light-row">
+                <div class="table-cell">
+                    <p>Turtle Hatchery Farm
+                    </p>
+                </div>
+                <div class="table-cell">
+                    <p>Turtle Hatchery for local Adults (1 hr) : 5000LKR   <br><br>
+                        Turtle Hatchery for local kids (above 5 years) : 2000LKR  <br><br>
+                        Turtle Hatchery for foreign adults : 10000LKR  <br><br>
+                        Turtle Hatchery for foreign kids : 5000LKR  <br></p>
+                </div>
+                <div class="table-cell  last-cell">
+                    <p>Adult : 1000LKR extra will be charged. <Br><br>
+                        Kids : 500LKR extra will be charged.</p>
+                </div>
+
+            
+            </div>
+            <div class="table-row table-footer">
+                <div class="table-cell  last-cell">
+                    <p>~ Click here to know more details about our adventure~</p>
+                </div>
+
+            </div>
+        </div>
+
+        <br><Br><br><br>
+
+        <form id="personal-form3">
+        <div class="book-container">
+            <div class="book-title">Booking Adventures</div><br><br>
+            <!-- <form action="#"> -->
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details" for="localAdult">Number of  Local Adults(SL)</label>
+                        <input type="number" placeholder="0" min="0" max="3" id="localAdult">
+                    </div>
+
+                    
+                </div>
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details" for="foreignAdult">Number of  Foreign Adults</label>
+                        <input type="number" placeholder="0" min="0" max="3" id="foreignAdult">
+                    </div>
+
+
+                </div>
+
+                <br><br>
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details" for="localKid">Number of Local kids (Ages 5 - 12)</label>
+                        <input type="number" placeholder="0" min="0" max="3" id="localKid">
+                    </div>
+
+                </div>
+
+
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details" for="foreignKid">Number of Foreign kids (Ages 5 - 12)</label>
+                        <input type="number" placeholder="0" min="0" max="3" id="foreignKid">
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details" for="hours">Number of Hours</label>
+                        <input type="number" placeholder="0" min="0" max="3" id="hours">
+                    </div>
+
+                  
+                </div>
+
+
+                <div class="user-details">
+                <fieldset>
+                    <legend class="details">Guide Selection</legend>
+                    <div >
+                        
+                        <p>
+                            <input type="radio" id="adultG" name="guideType">
+                            <label for="adultG" class="guidep">Adults</label>
+                        </p>
+                        <p>
+                        
+                            <input type="radio" id="kidG" name="guideType">
+                            <label for="kidG" class="guidep">Kids</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="adultKidG" name="guideType">
+                            <label for="adultKidG" class="guidep">Adults & Kids</label>
+                        </p>
+                    </div>
+                </fieldset>
+
+
+                </div>
+                <div class="user-details dropdown">
+                    <div class="input-box">
+                        <label for="advType" class="details">Adventure Type</label>
+                        <select name="list" size="1"  id="advType">
+                            <option>Hiking</option>
+                            <option>Scuba Diving</option>
+                            <option>Turtle Hatchery</option>
+                        </select>
+                    </div>
+                </div>
+
+            <br><br><br><br>
+
+
+                <fieldset>
+                    
+
+                    <button type="button" id="advBtn">Book Adventure</button>
+                    <button type="button" id="favBtnA">Add to Favourites</button>
+
+
+                <legend>Current Adventure Bookings</legend>
+
+                
+
+                        <p id="advOutput"></p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Overall Adventure Bookings</legend>
+                            <p id="overallAdv"></p>
+
+                </fieldset>
+
+               
+
+
+                <br><Br><br>
+
+
+
+                <fieldset>
+
+
+                    <legend>Total Cost of The Bill</legend>
+                        <p id="outputFinal"></p>   
+                </fieldset>
+
+                
+
+
+
+        
+        
+
+        </div>
+        </form>
+
+   
+
+</section>
+
+
+                
+
+                <footer>
+                    <div class="footer-container">
+        
+                        <div class="foot-logo">
+                            <img src="images/oglogo.png" alt="logodown">
+                        </div>
+                        
+                        <div class="sec-aboutus">
+                            <h2>About Us</h2>
+                            <p>Our story at Kingsman Hotels is one of devoted hospitality and a dedication to giving our visitors unmatched comfort.
+                                 We have established ourselves as a reputable brand in the hospitality sector thanks to a long history.</p>
+                            <ul class="sci">
+        
+                                <li><a href="#"><img src="images/icons/insta1.png" alt="insta"></a></li>
+                                <li><a href="#"><img src="images/icons/twitter.png" alt="twitter"></a></li>
+                                <li><a href="#"><img src="images/icons/facebook.png" alt="fb"></a></li>
+                                <li><a href="#"><img src="images/icons/youtube.png" alt="yt"></a></li>
+                                <li><a href="#"><img src="images/icons/linkedin.png" alt="linkedin"></a></li>
+                            </ul>
+                        </div>
+                        <div class="sec-quicklinks">
+                            <h2>Quick Pages</h2>
+                            <ul>
+                                <li> <a href="index.html">Home</a> </li>
+                                <li> <a href="branches.html">Branches</a> </li>
+                                <li> <a href="adventures.html">Adventures</a> </li>
+                                <li> <a href="restaurant.html">Restaurants</a> </li>
+                               
+                                
+                            </ul>
+                        </div>
+        
+                        <div class="hours">
+                            <h2>Operating Hours</h2>
+                            <p> Mon-Sat : 8AM to 6PM</p> <br>
+                            <p> Sun : 8AM to 2PM</p>
+                        </div>
+                        <div class="sec-contact">
+                            <h2>Contact Us</h2>
+                            <ul class="info">
+                                <li>
+                                 <img src="images/icons/mapmark.png" alt="mapmark">
+                                    &nbsp;&nbsp;&nbsp;<p>&nbsp;420 Glock Street<Br>
+                                    Sri Lanka, Pw 3433, <BR>SL</p>
+                                </li>
+                                <li>
+                                    <img src="images/icons/phone3.png" alt="phone" >
+                                    <p><a href="tel:+12852525">+94 213 242 43</a><br>
+                                        <a href="tel:+12852569">+235 1542 2626</a></p>   
+                                </li>
+                                <li>
+                                    <img src="images/icons/envelope.png" alt="envelope">
+                                    
+                                    <p><a href="mailto:Kingsman@gmail.com">Kingsman@gmail.com</a> </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+<!--
+
+header:
+
+Tong, D. (2016) Brown Wooden Sofa Set With Lighted Table Lamp · Free Stock Photo, Pexels. Available at: https://www.pexels.com/photo/brown-wooden-sofa-set-with-lighted-table-lamp-189333/.
+
+background :
+
+Ngamnithiporn, N. (2021) “Download White pillow decoration on bed in hotel resort bedroom for free,” Vecteezy [Preprint]. Available at: https://www.vecteezy.com/photo/2809134-white-pillow-decoration-on-bed-in-hotel-resort-bedroom.
+
+room :
+
+single room hotel pexels beacside - Google Search. (n.d.). https://www.google.com/search?q=single+room+hotel+pexels+beacside&tbm=isch&rlz=1C1WNOO_enLK984LK984#imgrc=P_Gjt8gVxhqTSM
+double room hotel pexels beacside - Google Search (no date). https://www.google.com/search?q=double+room+hotel+pexels+beacside&tbm=isch&rlz=1C1WNOO_enLK984LK984#imgrc=OEeWnJUZR759fM.
+thriple room hotel pexels beacside - Google Search. (n.d.). https://www.google.com/search?q=thriple+room+hotel+pexels+beacside&tbm=isch&rlz=1C1WNOO_enLK984LK984#imgrc=t1JwlTeYDFH9DM
+
+
+footer social icons :
+
+Instagram Icons, Logos, Symbols – Free download PNG, SVG (no date b). Available at: https://icons8.com/icons/set/instagram.
+Facebook Icons, Logos, Symbols – Free download PNG, SVG (no date). Available at: https://icons8.com/icons/set/facebook.
+YouTube Icons, Logos, Symbols – Free download PNG, SVG (no date). Available at: https://icons8.com/icons/set/youtube.
+LinkedIn Icons, Logos, Symbols – Free download PNG, SVG (no date). Available at: https://icons8.com/icons/set/linkedin.
+Twitter Icons, Logos, Symbols – Free download PNG, SVG (no date). Available at: https://icons8.com/icons/set/twitter.  -->
+        
+                </footer>
+                <div class="copyright-text">
+                    <p>Copyright © 1969 Kingsman Hotels. All Rights Reserved</p>
+                </div>
+
+
+    
+    </body>
+
+
+</html>
